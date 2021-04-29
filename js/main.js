@@ -43,7 +43,7 @@ function start() {
     }
 
     function pontuacao() {
-        $('#game-pontuacao').html(`Pontos: ${pontos}`);
+        $('#game-pontuacao').html(`Pontos: ${pontos} | Objetivo: 5000 pontos`);
         if(pontos >= 5000) {
             venceu();
         }
@@ -105,7 +105,7 @@ function start() {
         }
 
         if (jogo.pressionou[TECLA.DOWN]) {
-            if (top <= heightTela - 100) {
+            if (top <= heightTela - 140) {
                 $(id).css('top', top + 10)
             }
         }
